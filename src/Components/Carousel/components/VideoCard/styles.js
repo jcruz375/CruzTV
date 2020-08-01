@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const VideoCardContainer = styled.a`
-  border: 2px solid;
-  border-radius: 4px;
   text-decoration: none;
   overflow: hidden;
   cursor: pointer;
@@ -19,13 +17,16 @@ export const VideoCardContainer = styled.a`
   align-items: flex-end;
   padding: 16px;
 
-  transition: opacity .3s;
-  &:hover,
+  &:hover {
+    width: 327px;
+    height: 228px;
+    transition: 0.4s;
+  }
   &:focus {
     opacity: .5;
   }
   
   &:not(:first-child) {
-    margin-left: 20px;
+    margin-left: 2px;
   }
 `;

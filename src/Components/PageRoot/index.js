@@ -12,8 +12,7 @@ const Main = styled.main`
     padding-right: 5%;
 `;
 
-function PageRoot(props){
-    const {children} = props
+function PageRoot({children}){
     return(
         <>
             <Menu />
